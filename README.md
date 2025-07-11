@@ -1,6 +1,8 @@
 ## 概要
 
-MicroCMS の英単語長を取得して表示する実装例です。[microcms-js-sdk](https://github.com/microcmsio/microcms-js-sdk)を使ったものと、fetch API を使ったものを示しています。
+Nextjs を使った MicroCMS の英単語帳一覧を取得して表示する実装例です。
+
+[microcms-js-sdk](https://github.com/microcmsio/microcms-js-sdk)を使ったものと、fetch API を使ったものを示しています。
 
 ## 環境変数
 
