@@ -13,9 +13,50 @@ MicroCMS の英単語長を取得して表示する実装例です。[microcms-j
 
 ルートに.env.local を作成して、.example.env の内容を移してください。
 
+## API スキーマ
+
+```json
+{
+  "apiFields": [
+    {
+      "fieldId": "title",
+      "name": "英語",
+      "kind": "text",
+      "required": true,
+      "patternMatchValidation": {
+        "regexp": { "pattern": "[\\w-\\s]+", "flags": null }
+      },
+      "isUnique": false
+    },
+    {
+      "fieldId": "description",
+      "name": "日本語",
+      "kind": "text",
+      "required": true,
+      "isUnique": false
+    },
+    {
+      "fieldId": "author",
+      "name": "作成者",
+      "kind": "text",
+      "required": true,
+      "isUnique": false
+    },
+    { "fieldId": "imageUrl", "name": "画像", "kind": "media" },
+    { "fieldId": "referenceUrl", "name": "参照URL", "kind": "text" }
+  ],
+  "customFields": []
+}
+```
+
+画像について、7/11 現在準備中です。
+
 ## 参考
 
-- [Next.js との連携](https://document.microcms.io/tutorial/next/next-top)
-  - Nextjs でのセットアップ例です。Nextjs 以外にも、いろいろな例が載っています。
 - [コンテンツ API とは](https://document.microcms.io/content-api/introduction)
-  - GET/POST/DELETE などの API の仕様が書かれています。
+
+  - GET/POST/DELETE などの API の仕様が書かれています。レスポンスボディの例なども書かれています。
+
+- [Next.js との連携](https://document.microcms.io/tutorial/next/next-top)
+
+  - Nextjs との連携です。Nextjs 以外にも、Astro や Android や IOS など、いろいろな連携例が載っています。
