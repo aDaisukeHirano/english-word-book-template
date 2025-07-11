@@ -49,7 +49,21 @@ MicroCMS の英単語長を取得して表示する実装例です。[microcms-j
 }
 ```
 
-画像について、7/11 現在準備中です。
+## 画像
+
+MicroCMS にアップロードしている画像の URL 一覧
+
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/3b8b7e2151b4477295151a33669bb366/dog.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/8bb040d94e1c4bdd91875641a563ddbb/cow.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/183ff439dd624f78ab0c32488e156e9a/cat.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/b284350a889b417d9cfda91f2f4e3575/horse.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/2d345266ace647e0ad9275772f900f38/kuma.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/eadc65cfc2924fa8bba4238eeb65d295/sheep.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/5c87be6ecf9e45e1bc565be4c0d25a2d/usagi.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/6da5c6bb6a5a42719c686321e6fa9728/fox.png
+- https://images.microcms-assets.io/assets/d969296c041748ecbc26138e53640370/76ed4800b31141eb91116bc50c85e4a5/tanuki.png
+
+取得元：[フリーペンシル](https://iconbu.com/)
 
 ## 参考
 
