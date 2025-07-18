@@ -52,11 +52,13 @@ X-API-KEY : [Google Drive env.txt](https://drive.google.com/file/d/1PBD6uHqUM7aK
 }
 ```
 
-### [コンテンツ API ドキュメント](https://document.microcms.io/content-api/introduction)
+### コンテンツ API 仕様書
 
-- GET/POST/DELETE などの API の仕様が書かれています。GET で指定できるクエリパラメータや、レスポンスボディの例なども書かれています。
+[コンテンツ API とは](https://document.microcms.io/content-api/introduction)
 
-### GET による一覧取得の例
+GET/POST/DELETE などの API の仕様が書かれています。GET で指定できるクエリパラメータや、レスポンスボディの例なども書かれています。
+
+### 一覧取得の例
 
 ```ts
 const words = await fetch("https://9gpsl13tqx.microcms.io/api/v1/words", {
