@@ -4,18 +4,19 @@ Nextjs を使った MicroCMS の英単語帳一覧を取得して表示する実
 
 [microcms-js-sdk](https://github.com/microcmsio/microcms-js-sdk)を使ったものと、fetch API を使ったものを示しています。
 
-## 環境変数
-
-- NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN
-
-  - ドメインです。公開しても大丈夫です。
-
-- MICROCMS_API_KEY
-  - API キーです。公開してはいけません。平野に聞いてください。
-
-ルートに.env.local を作成して、.example.env の内容を移してください。
-
 ## API スキーマ
+
+### エンドポイント
+
+`https://9gpsl13tqx.microcms.io/api/v1`
+
+### リクエストヘッダー
+
+X-API-KEY : [Google Drive env.txt](https://drive.google.com/file/d/1PBD6uHqUM7aKGSBImxpjqzrCZjVyW8iW/view?usp=drive_link) に記載
+
+### パス
+
+#### /words
 
 ```json
 {
@@ -51,6 +52,21 @@ Nextjs を使った MicroCMS の英単語帳一覧を取得して表示する実
 }
 ```
 
+### [コンテンツ API ドキュメント](https://document.microcms.io/content-api/introduction)
+
+- GET/POST/DELETE などの API の仕様が書かれています。GET で指定できるクエリパラメータや、レスポンスボディの例なども書かれています。
+
+### GET による一覧取得の例
+
+```ts
+const words = await fetch("https://9gpsl13tqx.microcms.io/api/v1/words", {
+  method: "GET",
+  headers: {
+    "X-API-KEY": process.env.MICROCMS_API_KEY || "",
+  },
+}).then((res) => res.json());
+```
+
 ## 画像
 
 MicroCMS にアップロードしている画像の URL 一覧
@@ -68,10 +84,6 @@ MicroCMS にアップロードしている画像の URL 一覧
 取得元：[フリーペンシル](https://iconbu.com/)
 
 ## 参考
-
-- [コンテンツ API とは](https://document.microcms.io/content-api/introduction)
-
-  - GET/POST/DELETE などの API の仕様が書かれています。レスポンスボディの例なども書かれています。
 
 - [Next.js との連携](https://document.microcms.io/tutorial/next/next-top)
 
