@@ -8,15 +8,13 @@ Nextjs を使った MicroCMS の英単語帳一覧を取得して表示する実
 
 ### エンドポイント
 
-`https://9gpsl13tqx.microcms.io/api/v1`
+`https://9gpsl13tqx.microcms.io/api/v1/words`
 
 ### リクエストヘッダー
 
 X-API-KEY : [Google Drive env.txt](https://drive.google.com/file/d/1PBD6uHqUM7aKGSBImxpjqzrCZjVyW8iW/view?usp=drive_link) に記載
 
-### パス
-
-#### /words
+### コンテンツ
 
 ```json
 {
@@ -51,6 +49,18 @@ X-API-KEY : [Google Drive env.txt](https://drive.google.com/file/d/1PBD6uHqUM7aK
   "customFields": []
 }
 ```
+
+### コンテンツ設定画面
+
+各自でプロジェクトを設定する場合に参考にしてください。
+
+#### 全体
+
+![alt text](image.png)
+
+#### title フィールドの詳細設定　(「特定のパターンのみ入力を許可する」の設定)
+
+![alt text](image-1.png)
 
 ### コンテンツ API 仕様書
 
