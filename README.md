@@ -2,7 +2,7 @@
 
 Nextjs を使った MicroCMS の英単語帳一覧を取得して表示する実装例です。
 
-[microcms-js-sdk](https://github.com/microcmsio/microcms-js-sdk)を使ったものと、fetch API を使ったものを示しています。
+[src/app/page.tsx](https://github.com/aDaisukeHirano/english-word-book-template/blob/main/src/app/page.tsx) に、[microcms-js-sdk](https://github.com/microcmsio/microcms-js-sdk)を使ったものと、fetch API を使ったものを示しています。
 
 ## API スキーマ
 
